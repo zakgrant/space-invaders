@@ -65,13 +65,13 @@ module.exports = Game = (function() {
   }
 
   Game.prototype.preload = function() {
-    this.game.load.image('bg', 'space-invaders/assets/background.png');
-    this.game.load.image('player', 'space-invaders/assets/player-ship.png');
-    this.game.load.image('enemy1', 'space-invaders/assets/enemy-green.png');
-    this.game.load.image('enemy2', 'space-invaders/assets/enemy-red.png');
-    this.game.load.image('enemy3', 'space-invaders/assets/enemy-yellow.png');
-    this.game.load.image('powerUp', 'space-invaders/assets/star-gold.png');
-    return this.game.load.image('laser', 'space-invaders/assets/laser-green.png');
+    this.game.load.image('bg', '/assets/background.png');
+    this.game.load.image('player', '/assets/player-ship.png');
+    this.game.load.image('enemy1', '/assets/enemy-green.png');
+    this.game.load.image('enemy2', '/assets/enemy-red.png');
+    this.game.load.image('enemy3', '/assets/enemy-yellow.png');
+    this.game.load.image('powerUp', '/assets/star-gold.png');
+    return this.game.load.image('laser', '/assets/laser-green.png');
   };
 
   Game.prototype.create = function() {
@@ -339,7 +339,7 @@ module.exports = PreGame = (function() {
   }
 
   PreGame.prototype.preload = function() {
-    return this.game.load.image('bg', 'space-invaders/assets/background.png');
+    return this.game.load.image('bg', '/assets/background.png');
   };
 
   PreGame.prototype.create = function() {
